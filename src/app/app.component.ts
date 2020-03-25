@@ -48,4 +48,10 @@ openDialog(user) {
     data => console.log("Dialog output:", data)
 );  
 }
+ascending(){
+  this.userArray=this.userArray.sort(function(a, b){return a.score- b.score});
+}
+descending(){
+  this.userArray=this.userArray.sort(function(a, b){return b.score-a.score});
+}
 }
